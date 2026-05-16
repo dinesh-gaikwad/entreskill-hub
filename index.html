@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO Meta Tags -->
+  <title>EntreSkill Hub – Turn Your Skills Into a Startup | Micro-Business Platform</title>
+  <meta name="description" content="EntreSkill Hub helps you discover business ideas from your skills, get step-by-step roadmaps, training resources, and mentorship to launch your micro-business today." />
+  <meta name="keywords" content="micro business, skill to startup, entrepreneurship platform, business roadmap, mentorship, small business ideas, self employment" />
+  <meta name="author" content="EntreSkill Hub" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://entreskillhub.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="EntreSkill Hub – Skill to Startup Enablement Platform" />
+  <meta property="og:description" content="Turn your skills into a thriving micro-business with structured roadmaps, training, and mentorship." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://entreskillhub.com/" />
+  <meta property="og:image" content="https://entreskillhub.com/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EntreSkill Hub – Skill to Startup" />
+  <meta name="twitter:description" content="Your skill is your startup. Get the roadmap, training & mentorship." />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "EntreSkill Hub",
+    "url": "https://entreskillhub.com",
+    "description": "Skill-to-Startup Enablement Platform helping aspiring micro-entrepreneurs launch and grow businesses.",
+    "foundingDate": "2025",
+    "sameAs": [
+      "https://www.linkedin.com/company/entreskillhub",
+      "https://github.com/entreskillhub"
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============ CSS RESET & VARIABLES ============ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #0d0d0d;
+      --paper: #f5f0e8;
+      --cream: #faf7f2;
+      --accent: #e85d2f;
+      --accent2: #2a6b4f;
+      --gold: #c9a84c;
+      --muted: #6b6456;
+      --border: #d9d0c1;
+      --white: #ffffff;
+      --nav-h: 72px;
+      --r: 12px;
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    h1,h2,h3,h4,h5 { font-family: 'Syne', sans-serif; line-height: 1.15; }
+
+    a { text-decoration: none; color: inherit; }
+    img { display: block; max-width: 100%; }
+    ul { list-style: none; }
+
+    /* ============ UTILITIES ============ */
+    .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+    .section { padding: 96px 0; }
+    .section-label {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+    .section-sub {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 560px;
+      line-height: 1.7;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all 0.25s ease;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: var(--white);
+      border-color: var(--accent);
+    }
+    .btn-primary:hover { background: #c44a1e; border-color: #c44a1e; transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent;
+      color: var(--ink);
+      border-color: var(--border);
+    }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-white {
+      background: var(--white);
+      color: var(--ink);
+    }
+    .btn-white:hover { background: var(--paper); }
+
+    /* ============ NAVBAR ============ */
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      height: var(--nav-h);
+      background: rgba(250, 247, 242, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: all 0.3s;
+    }
+    .nav-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.35rem;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nav-logo span {
+      display: inline-block;
+      width: 32px; height: 32px;
+      background: var(--accent);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      color: white;
+      font-size: 1rem;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+    }
+    .nav-links a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--muted);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-cta { display: flex; gap: 12px; }
+
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--ink); border-radius: 2px; transition: all 0.3s; }
+
+    /* ============ HERO ============ */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: var(--nav-h);
+      background: var(--cream);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -200px;
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(232,93,47,0.08) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -100px; left: -150px;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(42,107,79,0.07) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(232,93,47,0.1);
+      border: 1px solid rgba(232,93,47,0.2);
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: 24px;
+    }
+    .hero-badge::before { content: '●'; font-size: 0.5rem; }
+    .hero-title {
+      font-size: clamp(2.8rem, 5vw, 4.2rem);
+      font-weight: 800;
+      line-height: 1.08;
+      margin-bottom: 24px;
+      color: var(--ink);
+    }
+    .hero-title em {
+      font-style: normal;
+      color: var(--accent);
+      position: relative;
+    }
+    .hero-title em::after {
+      content: '';
+      position: absolute;
+      bottom: 4px; left: 0; right: 0;
+      height: 3px;
+      background: var(--accent);
+      opacity: 0.3;
+      border-radius: 2px;
+    }
+    .hero-desc {
+      font-size: 1.15rem;
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 36px;
+      max-width: 480px;
+    }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+    }
+    .stat-item { }
+    .stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--ink);
+    }
+    .stat-label { font-size: 0.8rem; color: var(--muted); }
+
+    /* Hero Visual */
+    .hero-visual {
+      position: relative;
+    }
+    .hero-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+      position: relative;
+    }
+    .hero-card-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 20px;
+      color: var(--ink);
+    }
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .skill-tag {
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      cursor: pointer;
+      border: 1.5px solid var(--border);
+      transition: all 0.2s;
+    }
+    .skill-tag.active { background: var(--accent); color: white; border-color: var(--accent); }
+    .skill-tag:hover:not(.active) { border-color: var(--accent); color: var(--accent); }
+
+    .idea-card {
+      background: var(--paper);
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: transform 0.2s;
+    }
+    .idea-card:hover { transform: translateX(4px); }
+    .idea-icon {
+      width: 40px; height: 40px;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .idea-text strong { font-family: 'Syne', sans-serif; font-size: 0.9rem; display: block; }
+    .idea-text span { font-size: 0.78rem; color: var(--muted); }
+
+    .floating-badge {
+      position: absolute;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 16px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Syne', sans-serif;
+    }
+    .fb1 { top: -20px; right: -10px; }
+    .fb2 { bottom: -16px; left: -16px; }
+    .fb-dot { width: 8px; height: 8px; border-radius: 50%; }
+
+    /* ============ HOW IT WORKS ============ */
+    .how { background: var(--ink); color: var(--white); }
+    .how .section-label { color: var(--gold); }
+    .how .section-title { color: var(--white); }
+    .how .section-sub { color: rgba(255,255,255,0.6); }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      margin-top: 64px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .step-item {
+      padding: 40px 28px;
+      background: var(--ink);
+      position: relative;
+      transition: background 0.3s;
+    }
+    .step-item:hover { background: #1a1a1a; }
+    .step-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 3rem;
+      font-weight: 800;
+      color: rgba(255,255,255,0.08);
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    .step-icon { font-size: 2rem; margin-bottom: 16px; }
+    .step-title { font-family: 'Syne', sans-serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; color: var(--white); }
+    .step-desc { font-size: 0.88rem; color: rgba(255,255,255,0.55); line-height: 1.6; }
+    .step-item::after {
+      content: '→';
+      position: absolute;
+      right: -14px; top: 50%;
+      transform: translateY(-50%);
+      color: rgba(255,255,255,0.2);
+      font-size: 1.2rem;
+      z-index: 1;
+    }
+    .step-item:last-child::after { display: none; }
+
+    /* ============ FEATURES ============ */
+    .features { background: var(--cream); }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 64px;
+    }
+    .feature-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px 30px;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transition: transform 0.3s;
+      transform-origin: left;
+    }
+    .feature-card:hover { transform: translateY(-6px); box-shadow: 0 24px 48px rgba(0,0,0,0.08); }
+    .feature-card:hover::before { transform: scaleX(1); }
+    .feature-icon {
+      width: 52px; height: 52px;
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 24px;
+      background: var(--paper);
+    }
+    .feature-title { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 12px; }
+    .feature-desc { font-size: 0.9rem; color: var(--muted); line-height: 1.65; }
+
+    /* ============ ROADMAP ============ */
+    .roadmap { background: var(--paper); }
+    .roadmap-header { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
+    .roadmap-tabs {
+      display: flex;
+      gap: 8px;
+      margin-top: 36px;
+      margin-bottom: 36px;
+      flex-wrap: wrap;
+    }
+    .tab-btn {
+      padding: 8px 20px;
+      border-radius: 50px;
+      border: 1.5px solid var(--border);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: 'Syne', sans-serif;
+      transition: all 0.2s;
+      background: transparent;
+    }
+    .tab-btn.active { background: var(--ink); color: var(--white); border-color: var(--ink); }
+    .tab-btn:hover:not(.active) { border-color: var(--accent); color: var(--accent); }
+
+    .roadmap-steps {
+      display: grid;
+      gap: 16px;
+    }
+    .roadmap-step {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 28px;
+      display: grid;
+      grid-template-columns: 48px 1fr auto;
+      gap: 20px;
+      align-items: center;
+      transition: all 0.25s;
+    }
+    .roadmap-step:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+    .rs-num {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      background: var(--paper);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 0.9rem;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+    .roadmap-step.done .rs-num { background: var(--accent2); color: white; }
+    .rs-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.95rem; margin-bottom: 4px; }
+    .rs-desc { font-size: 0.83rem; color: var(--muted); }
+    .rs-badge {
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .badge-done { background: rgba(42,107,79,0.1); color: var(--accent2); }
+    .badge-next { background: rgba(232,93,47,0.1); color: var(--accent); }
+    .badge-locked { background: var(--paper); color: var(--muted); }
+
+    /* ============ MENTORS ============ */
+    .mentors { background: var(--cream); }
+    .mentors-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 64px;
+    }
+    .mentor-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px 28px;
+      text-align: center;
+      transition: all 0.3s;
+    }
+    .mentor-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.08); }
+    .mentor-avatar {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem;
+      background: var(--paper);
+      border: 3px solid var(--border);
+    }
+    .mentor-name { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.05rem; margin-bottom: 4px; }
+    .mentor-role { font-size: 0.83rem; color: var(--accent); font-weight: 500; margin-bottom: 12px; }
+    .mentor-bio { font-size: 0.85rem; color: var(--muted); line-height: 1.6; margin-bottom: 20px; }
+    .mentor-tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-bottom: 20px; }
+    .mentor-tag {
+      padding: 4px 12px;
+      border-radius: 50px;
+      background: var(--paper);
+      font-size: 0.75rem;
+      color: var(--muted);
+      border: 1px solid var(--border);
+    }
+    .mentor-btn {
+      display: inline-block;
+      width: 100%;
+      padding: 10px;
+      border-radius: 50px;
+      border: 1.5px solid var(--border);
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      background: transparent;
+    }
+    .mentor-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* ============ TESTIMONIALS ============ */
+    .testimonials { background: var(--paper); }
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 64px;
+    }
+    .testi-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px 28px;
+      transition: all 0.3s;
+    }
+    .testi-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.06); }
+    .testi-stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 16px; }
+    .testi-text { font-size: 0.95rem; color: var(--ink); line-height: 1.7; margin-bottom: 24px; font-style: italic; }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .testi-avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--paper);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      border: 2px solid var(--border);
+      flex-shrink: 0;
+    }
+    .testi-name { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.9rem; }
+    .testi-location { font-size: 0.78rem; color: var(--muted); }
+
+    /* ============ PRICING ============ */
+    .pricing { background: var(--cream); }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 64px;
+      align-items: start;
+    }
+    .price-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px 30px;
+      transition: all 0.3s;
+    }
+    .price-card.featured {
+      background: var(--ink);
+      color: var(--white);
+      border-color: var(--ink);
+      transform: scale(1.04);
+    }
+    .price-card:hover:not(.featured) { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.08); }
+    .price-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+    .price-card.featured .price-label { color: var(--gold); }
+    .price-plan { font-family: 'Syne', sans-serif; font-size: 1.3rem; font-weight: 800; margin-bottom: 20px; }
+    .price-amount {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .price-amount sup { font-size: 1.2rem; vertical-align: top; margin-top: 6px; }
+    .price-period { font-size: 0.85rem; color: var(--muted); margin-bottom: 28px; }
+    .price-card.featured .price-period { color: rgba(255,255,255,0.5); }
+    .price-divider { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+    .price-card.featured .price-divider { border-color: rgba(255,255,255,0.1); }
+    .price-features { display: grid; gap: 12px; margin-bottom: 32px; }
+    .pf-item { display: flex; align-items: center; gap: 10px; font-size: 0.88rem; }
+    .pf-check { color: var(--accent2); font-size: 0.9rem; }
+    .price-card.featured .pf-check { color: var(--gold); }
+    .price-card.featured .pf-item { color: rgba(255,255,255,0.85); }
+    .price-card.featured .btn-outline { border-color: rgba(255,255,255,0.3); color: white; }
+    .price-card.featured .btn-outline:hover { border-color: white; }
+
+    /* ============ CTA ============ */
+    .cta-section {
+      background: var(--accent);
+      padding: 96px 0;
+      text-align: center;
+    }
+    .cta-section h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+    .cta-section p { color: rgba(255,255,255,0.8); font-size: 1.1rem; margin-bottom: 36px; }
+    .cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* ============ FOOTER ============ */
+    .footer { background: var(--ink); color: var(--white); padding: 72px 0 32px; }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 32px;
+    }
+    .footer-brand .nav-logo { color: var(--white); margin-bottom: 16px; }
+    .footer-desc { font-size: 0.88rem; color: rgba(255,255,255,0.5); line-height: 1.7; margin-bottom: 24px; }
+    .social-links { display: flex; gap: 12px; }
+    .social-link {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.1);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .social-link:hover { border-color: var(--accent); background: var(--accent); }
+    .footer-col-title { font-family: 'Syne', sans-serif; font-weight: 700; margin-bottom: 20px; font-size: 0.9rem; }
+    .footer-links { display: grid; gap: 10px; }
+    .footer-links a { font-size: 0.85rem; color: rgba(255,255,255,0.5); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .footer-bottom p { font-size: 0.82rem; color: rgba(255,255,255,0.35); }
+
+    /* ============ MOBILE MENU ============ */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: var(--nav-h); left: 0; right: 0;
+      background: var(--cream);
+      border-bottom: 1px solid var(--border);
+      padding: 24px;
+      z-index: 999;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-size: 1rem; font-weight: 500; color: var(--ink); }
+
+    /* ============ ANIMATIONS ============ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.6s ease forwards; }
+    .delay-1 { animation-delay: 0.1s; opacity: 0; }
+    .delay-2 { animation-delay: 0.2s; opacity: 0; }
+    .delay-3 { animation-delay: 0.3s; opacity: 0; }
+    .delay-4 { animation-delay: 0.4s; opacity: 0; }
+
+    /* ============ RESPONSIVE ============ */
+    @media (max-width: 1024px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 48px; }
+      .hero-visual { display: none; }
+      .steps-grid { grid-template-columns: repeat(2, 1fr); }
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .mentors-grid { grid-template-columns: repeat(2, 1fr); }
+      .testi-grid { grid-template-columns: repeat(2, 1fr); }
+      .pricing-grid { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
+      .price-card.featured { transform: scale(1); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .steps-grid { grid-template-columns: 1fr; }
+      .features-grid { grid-template-columns: 1fr; }
+      .mentors-grid { grid-template-columns: 1fr; }
+      .testi-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .hero-stats { flex-wrap: wrap; gap: 20px; }
+      .section { padding: 64px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span>🚀</span>
+        EntreSkill Hub
+      </a>
+      <ul class="nav-links">
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#mentors">Mentors</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#" class="btn btn-outline">Log In</a>
+        <a href="#" class="btn btn-primary">Get Started Free</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#how" onclick="toggleMenu()">How It Works</a>
+    <a href="#features" onclick="toggleMenu()">Features</a>
+    <a href="#roadmap" onclick="toggleMenu()">Roadmap</a>
+    <a href="#mentors" onclick="toggleMenu()">Mentors</a>
+    <a href="#pricing" onclick="toggleMenu()">Pricing</a>
+    <a href="#" class="btn btn-primary" style="text-align:center;">Get Started Free</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge fade-up">Trusted by 10,000+ Aspiring Entrepreneurs</div>
+        <h1 class="hero-title fade-up delay-1">
+          Your Skill Is<br/>Your <em>Startup</em><br/>Waiting to Launch
+        </h1>
+        <p class="hero-desc fade-up delay-2">
+          EntreSkill Hub maps your skills to real business opportunities — then gives you the roadmap, training, and mentors to actually launch and grow.
+        </p>
+        <div class="hero-actions fade-up delay-3">
+          <a href="#" class="btn btn-primary">Discover My Business Idea →</a>
+          <a href="#how" class="btn btn-outline">See How It Works</a>
+        </div>
+        <div class="hero-stats fade-up delay-4">
+          <div class="stat-item">
+            <div class="stat-num">10K+</div>
+            <div class="stat-label">Active Users</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">500+</div>
+            <div class="stat-label">Business Ideas</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">200+</div>
+            <div class="stat-label">Expert Mentors</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">87%</div>
+            <div class="stat-label">Launch Success Rate</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Card Visual -->
+      <div class="hero-visual">
+        <div class="floating-badge fb1">
+          <span class="fb-dot" style="background:#2a6b4f"></span>
+          15 new ideas found!
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-title">🎯 What are your skills?</div>
+          <div class="skill-tags">
+            <span class="skill-tag active">Tailoring ✓</span>
+            <span class="skill-tag active">Social Media ✓</span>
+            <span class="skill-tag">Cooking</span>
+            <span class="skill-tag">Web Design</span>
+            <span class="skill-tag">Photography</span>
+            <span class="skill-tag">Teaching</span>
+            <span class="skill-tag active">Handicrafts ✓</span>
+          </div>
+          <p style="font-size:0.8rem;color:var(--muted);margin-bottom:14px;font-weight:500;">💡 Recommended for you:</p>
+          <div class="idea-card">
+            <div class="idea-icon" style="background:rgba(232,93,47,0.1)">👗</div>
+            <div class="idea-text">
+              <strong>Custom Fashion Boutique</strong>
+              <span>Est. ₹15,000 startup cost • High demand</span>
+            </div>
+          </div>
+          <div class="idea-card">
+            <div class="idea-icon" style="background:rgba(42,107,79,0.1)">🛍️</div>
+            <div class="idea-text">
+              <strong>Handcraft Online Store</strong>
+              <span>Est. ₹8,000 startup cost • Growing market</span>
+            </div>
+          </div>
+          <div class="idea-card">
+            <div class="idea-icon" style="background:rgba(201,168,76,0.1)">📱</div>
+            <div class="idea-text">
+              <strong>Social Media Agency</strong>
+              <span>Est. ₹2,000 startup cost • Remote ready</span>
+            </div>
+          </div>
+        </div>
+        <div class="floating-badge fb2">
+          🎓 Mentor session booked!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="section how" id="how">
+    <div class="container">
+      <div class="section-label">Simple Process</div>
+      <h2 class="section-title">From Skill to Business in 4 Steps</h2>
+      <p class="section-sub">No confusion, no overwhelm. A clear path from where you are to where you want to be.</p>
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-num">01</div>
+          <div class="step-icon">🎯</div>
+          <div class="step-title">Profile Your Skills</div>
+          <div class="step-desc">Tell us what you're good at — tailoring, cooking, digital skills, handicrafts, or anything else.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">02</div>
+          <div class="step-icon">💡</div>
+          <div class="step-title">Get Business Ideas</div>
+          <div class="step-desc">Receive personalized business idea recommendations matched to your skills, location, and goals.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">03</div>
+          <div class="step-icon">🗺️</div>
+          <div class="step-title">Follow Your Roadmap</div>
+          <div class="step-desc">Step-by-step business roadmap: validation, legal setup, tools, marketing, and cost estimation.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">04</div>
+          <div class="step-icon">🚀</div>
+          <div class="step-title">Launch & Grow</div>
+          <div class="step-desc">Access training content, connect with mentors, and track your progress as you build your business.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="section features" id="features">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:16px;">
+        <div class="section-label" style="display:inline-block">Everything You Need</div>
+      </div>
+      <h2 class="section-title" style="text-align:center">Built for First-Time Founders</h2>
+      <p class="section-sub" style="margin:0 auto 0;text-align:center">All the tools, guidance, and community you need — in one place.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">Skill & Interest Assessment</h3>
+          <p class="feature-desc">A smart profiling system that understands your skills, interests, and local context to match you with the right business ideas.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💡</div>
+          <h3 class="feature-title">Business Idea Engine</h3>
+          <p class="feature-desc">500+ curated business ideas across 20+ skill categories. Each idea comes with market demand analysis and startup cost estimates.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🗺️</div>
+          <h3 class="feature-title">Step-by-Step Roadmaps</h3>
+          <p class="feature-desc">From idea validation to legal registration, tools needed, cost planning, and marketing — all broken into actionable steps.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📚</div>
+          <h3 class="feature-title">Training Resources</h3>
+          <p class="feature-desc">Videos, articles, checklists, and templates curated by industry experts. Learn at your own pace, offline friendly.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👨‍🏫</div>
+          <h3 class="feature-title">Mentor Connect</h3>
+          <p class="feature-desc">Access 200+ verified mentors across business domains. Book sessions, ask questions, and get personalized guidance.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-title">Progress Dashboard</h3>
+          <p class="feature-desc">Track your learning milestones, roadmap progress, and upcoming mentor sessions — all in a clean, intuitive dashboard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ROADMAP ===== -->
+  <section class="section roadmap" id="roadmap">
+    <div class="container">
+      <div class="roadmap-header">
+        <div>
+          <div class="section-label">Business Roadmap</div>
+          <h2 class="section-title">Your Path to Launch</h2>
+          <p class="section-sub">Every business idea comes with a detailed, actionable roadmap.</p>
+        </div>
+        <a href="#" class="btn btn-outline" style="flex-shrink:0">Explore All Roadmaps →</a>
+      </div>
+      <div class="roadmap-tabs">
+        <button class="tab-btn active">Custom Tailoring Boutique</button>
+        <button class="tab-btn">Home Food Business</button>
+        <button class="tab-btn">Digital Agency</button>
+        <button class="tab-btn">Handicraft Store</button>
+      </div>
+      <div class="roadmap-steps">
+        <div class="roadmap-step done">
+          <div class="rs-num">✓</div>
+          <div>
+            <div class="rs-title">Idea Validation</div>
+            <div class="rs-desc">Research market demand, identify target customers, validate pricing in your area</div>
+          </div>
+          <span class="rs-badge badge-done">Completed</span>
+        </div>
+        <div class="roadmap-step done">
+          <div class="rs-num">✓</div>
+          <div>
+            <div class="rs-title">Skills & Tools Needed</div>
+            <div class="rs-desc">Sewing machine, fabric sourcing, design tools, packaging materials — full list included</div>
+          </div>
+          <span class="rs-badge badge-done">Completed</span>
+        </div>
+        <div class="roadmap-step">
+          <div class="rs-num">03</div>
+          <div>
+            <div class="rs-title">Legal Registration & Setup</div>
+            <div class="rs-desc">Business registration, GST basics, bank account setup, basic licenses needed</div>
+          </div>
+          <span class="rs-badge badge-next">In Progress</span>
+        </div>
+        <div class="roadmap-step">
+          <div class="rs-num">04</div>
+          <div>
+            <div class="rs-title">Cost Estimation & Funding</div>
+            <div class="rs-desc">Startup cost breakdown: ₹12,000–₹25,000. Funding options and savings plan</div>
+          </div>
+          <span class="rs-badge badge-locked">Locked</span>
+        </div>
+        <div class="roadmap-step">
+          <div class="rs-num">05</div>
+          <div>
+            <div class="rs-title">Marketing & Customer Acquisition</div>
+            <div class="rs-desc">WhatsApp marketing, Instagram setup, local community outreach, first 10 customers plan</div>
+          </div>
+          <span class="rs-badge badge-locked">Locked</span>
+        </div>
+        <div class="roadmap-step">
+          <div class="rs-num">06</div>
+          <div>
+            <div class="rs-title">Launch & Scale</div>
+            <div class="rs-desc">Grand opening plan, reinvestment strategy, hiring help, and growth roadmap to ₹1L/month</div>
+          </div>
+          <span class="rs-badge badge-locked">Locked</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENTORS ===== -->
+  <section class="section mentors" id="mentors">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:16px;">
+        <div class="section-label" style="display:inline-block">Expert Mentors</div>
+      </div>
+      <h2 class="section-title" style="text-align:center">Learn From Real Entrepreneurs</h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center">Connect with 200+ verified mentors who've built successful micro-businesses.</p>
+      <div class="mentors-grid">
+        <div class="mentor-card">
+          <div class="mentor-avatar">👩</div>
+          <div class="mentor-name">Priya Sharma</div>
+          <div class="mentor-role">Fashion & Tailoring Expert</div>
+          <p class="mentor-bio">Built a 7-figure tailoring business from a home studio. Mentor to 200+ women entrepreneurs.</p>
+          <div class="mentor-tags">
+            <span class="mentor-tag">Tailoring</span>
+            <span class="mentor-tag">Fashion</span>
+            <span class="mentor-tag">Branding</span>
+          </div>
+          <button class="mentor-btn">Book a Session</button>
+        </div>
+        <div class="mentor-card">
+          <div class="mentor-avatar">👨</div>
+          <div class="mentor-name">Rahul Mehta</div>
+          <div class="mentor-role">Digital Business Strategist</div>
+          <p class="mentor-bio">10+ years helping rural entrepreneurs transition to online income. Specializes in low-cost digital startups.</p>
+          <div class="mentor-tags">
+            <span class="mentor-tag">Digital Marketing</span>
+            <span class="mentor-tag">SEO</span>
+            <span class="mentor-tag">E-Commerce</span>
+          </div>
+          <button class="mentor-btn">Book a Session</button>
+        </div>
+        <div class="mentor-card">
+          <div class="mentor-avatar">👩‍🍳</div>
+          <div class="mentor-name">Anita Desai</div>
+          <div class="mentor-role">Food Business Specialist</div>
+          <p class="mentor-bio">Scaled a home tiffin service to 3 cloud kitchens. Expert in FSSAI compliance and food branding.</p>
+          <div class="mentor-tags">
+            <span class="mentor-tag">Food Business</span>
+            <span class="mentor-tag">FSSAI</span>
+            <span class="mentor-tag">Scaling</span>
+          </div>
+          <button class="mentor-btn">Book a Session</button>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px;">
+        <a href="#" class="btn btn-outline">View All 200+ Mentors →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:16px;">
+        <div class="section-label" style="display:inline-block">Success Stories</div>
+      </div>
+      <h2 class="section-title" style="text-align:center">Real People, Real Businesses</h2>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"I had no idea my tailoring skill could become a ₹50,000/month business. EntreSkill Hub's roadmap made every step clear — from registering to getting my first 20 clients."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">👩</div>
+            <div>
+              <div class="testi-name">Kavya R.</div>
+              <div class="testi-location">Rajkot, Gujarat</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"The mentor sessions were game-changing. Within 3 months of following the digital agency roadmap, I landed my first 5 clients and quit my job."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">👨</div>
+            <div>
+              <div class="testi-name">Arun K.</div>
+              <div class="testi-location">Coimbatore, Tamil Nadu</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"As a woman from a small town, I never thought I could run a business. EntreSkill Hub's training and Priya's mentorship gave me the confidence and the tools to succeed."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">👩‍🦱</div>
+            <div>
+              <div class="testi-name">Sunita M.</div>
+              <div class="testi-location">Nashik, Maharashtra</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:16px;">
+        <div class="section-label" style="display:inline-block">Simple Pricing</div>
+      </div>
+      <h2 class="section-title" style="text-align:center">Start Free, Scale as You Grow</h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center">No hidden fees. Cancel anytime.</p>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-label">Starter</div>
+          <div class="price-plan">Free</div>
+          <div class="price-amount"><sup>₹</sup>0</div>
+          <div class="price-period">Forever free</div>
+          <hr class="price-divider"/>
+          <ul class="price-features">
+            <li class="pf-item"><span class="pf-check">✓</span> Skill assessment</li>
+            <li class="pf-item"><span class="pf-check">✓</span> 5 business idea recommendations</li>
+            <li class="pf-item"><span class="pf-check">✓</span> 1 roadmap access</li>
+            <li class="pf-item"><span class="pf-check">✓</span> Basic training resources</li>
+          </ul>
+          <a href="#" class="btn btn-outline" style="width:100%;justify-content:center">Get Started Free</a>
+        </div>
+        <div class="price-card featured">
+          <div class="price-label">Most Popular</div>
+          <div class="price-plan">Growth</div>
+          <div class="price-amount"><sup>₹</sup>499</div>
+          <div class="price-period">per month</div>
+          <hr class="price-divider"/>
+          <ul class="price-features">
+            <li class="pf-item"><span class="pf-check">✓</span> Unlimited business ideas</li>
+            <li class="pf-item"><span class="pf-check">✓</span> All roadmaps unlocked</li>
+            <li class="pf-item"><span class="pf-check">✓</span> Full training library</li>
+            <li class="pf-item"><span class="pf-check">✓</span> 2 mentor sessions/month</li>
+            <li class="pf-item"><span class="pf-check">✓</span> Progress tracking</li>
+            <li class="pf-item"><span class="pf-check">✓</span> Bookmark & save ideas</li>
+          </ul>
+          <a href="#" class="btn btn-primary" style="width:100%;justify-content:center">Start Growth Plan</a>
+        </div>
+        <div class="price-card">
+          <div class="price-label">Enterprise</div>
+          <div class="price-plan">Pro</div>
+          <div class="price-amount"><sup>₹</sup>1,499</div>
+          <div class="price-period">per month</div>
+          <hr class="price-divider"/>
+          <ul class="price-features">
+            <li class="pf-item"><span class="pf-check">✓</span> Everything in Growth</li>
+            <li class="pf-item"><span class="pf-check">✓</span> Unlimited mentor sessions</li>
+            <li class="pf-item"><span class="pf-check">✓</span> 1-on-1 business coaching</li>
+            <li class="pf-item"><span class="pf-check">✓</span> Priority support</li>
+            <li class="pf-item"><span class="pf-check">✓</span> Custom roadmap creation</li>
+          </ul>
+          <a href="#" class="btn btn-outline" style="width:100%;justify-content:center">Start Pro Plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Turn Your Skill Into a Business?</h2>
+      <p>Join 10,000+ aspiring entrepreneurs who discovered their path with EntreSkill Hub.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-white">Start for Free — No Credit Card Needed</a>
+        <a href="#mentors" class="btn btn-outline" style="border-color:rgba(255,255,255,0.4);color:white">Talk to a Mentor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span>🚀</span> EntreSkill Hub
+          </div>
+          <p class="footer-desc">The Skill-to-Startup Enablement Platform helping aspiring entrepreneurs turn their skills into thriving micro-businesses.</p>
+          <div class="social-links">
+            <a href="https://linkedin.com/company/entreskillhub" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="https://github.com/entreskillhub" class="social-link" aria-label="GitHub">gh</a>
+            <a href="#" class="social-link" aria-label="Twitter">tw</a>
+            <a href="#" class="social-link" aria-label="Instagram">ig</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Platform</div>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#roadmap">Roadmaps</a></li>
+            <li><a href="#mentors">Mentors</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Resources</div>
+          <ul class="footer-links">
+            <li><a href="#">Business Ideas</a></li>
+            <li><a href="#">Training Library</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Success Stories</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Become a Mentor</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 EntreSkill Hub. All rights reserved. Empowering grassroots entrepreneurs across India.</p>
+        <p>Made with ❤️ for aspiring entrepreneurs</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 40) {
+        nav.style.boxShadow = '0 4px 24px rgba(0,0,0,0.08)';
+      } else {
+        nav.style.boxShadow = 'none';
+      }
+    });
+
+    // Mobile menu toggle
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('open');
+    }
+
+    // Roadmap tabs
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+
+    // Skill tags toggle
+    document.querySelectorAll('.skill-tag').forEach(tag => {
+      tag.addEventListener('click', () => tag.classList.toggle('active'));
+    });
+
+    // Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.feature-card, .mentor-card, .testi-card, .price-card, .step-item, .roadmap-step').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
