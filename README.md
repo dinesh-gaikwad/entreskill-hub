@@ -6,7 +6,8 @@
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 ## 🌟 About
-
+micro-business  entrepreneurship  startup  skill-development
+business-roadmap  mentorship  india  self-employment
 EntreSkill Hub helps aspiring micro-entrepreneurs discover business ideas aligned with their skills, and provides structured roadmaps, training content, and mentorship access to launch and grow their ventures.
 
 ### The Problem
