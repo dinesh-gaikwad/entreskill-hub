@@ -1,0 +1,12 @@
+{
+  "name": "indiegamer-hub",
+  "private": true,
+  "workspaces": ["client", "server"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace server\" \"npm run dev --workspace client\"",
+    "setup": "bash create_project.sh"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
