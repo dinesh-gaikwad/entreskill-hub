@@ -3,7 +3,24 @@
   "version": "1.0.0",
   "main": "src/server.js",
   "scripts": {
-    "dev": "node src/server.js",
+    "dev": "nodemon src/server.js",
     "start": "node src/server.js"
+  },
+  "description": "",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
